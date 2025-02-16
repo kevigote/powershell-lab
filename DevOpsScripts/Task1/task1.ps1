@@ -18,7 +18,7 @@ Write-Output $getDate
 $getLog = "Log initialized at {0}" -f $getDate
 Write-Host $getLog
 Set-Content -Path $logFile -Value $getLog
-Get-Content -Path .\log.txt
+Get-Content -Path $logFile
 Write-host '---Log file updated---'
 
 # Copy the content of the log file to another file
@@ -27,7 +27,7 @@ Get-Content -Path $backupLogFile
 Write-Host '---Backup log file updated---'
 
 # Remove the log file
-if(Test-Path .\backup-log.txt) {
+if(Test-Path $backupLogFile) {
     Remove-Item -Path $backupLogFile
     Write-Host '---Backup file removed---'
 } else {
