@@ -20,4 +20,21 @@
 
 ---
 
-## Exercise 2: Loops & Conditionals *(Coming Soon)*
+## Challenge 2: User Input & Validation
+
+### **Challenge**
+1. Ask the user to input a number.
+2. Validate that the input is a numeric value.
+3. If valid, display whether the number is **even** or **odd**.
+4. If the user types `"exit"`, terminate the script gracefully.
+5. If the input is invalid (non-numeric), prompt an error message.
+
+### **Expected Outcome**
+- If the user enters `4`, the script prints: The number 4 is even
+- If the user enters `7`, the script prints: The number 7 is odd
+- If the user enters `"hello"`, the script prints: Invalid input. Please add a numeric value, because 'hello' is not a valid number
+- If the user types `"exit"`, the script stops with: Exiting the script
+
+### **Bonus**
+- The script should handle accidental spaces in input (`" 42 "` should be treated as `42`).
+- The exit message should appear after breaking the loop.
