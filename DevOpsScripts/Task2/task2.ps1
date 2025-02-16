@@ -1,0 +1,2 @@
+$num
+Write-Host ""
