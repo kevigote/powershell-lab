@@ -7,6 +7,9 @@ while ($true) {
     # Ask for a input
     $num = Read-Host "Add a numeric value"
 
+    # Trim the input to avoid accidental spaces
+    $num = $num.Trim()
+
     # Check if the user wants to exit
     if ($num -eq "exit") {
         Write-Host "Exiting the script"
@@ -25,3 +28,6 @@ while ($true) {
             Write-Host "Invalid input. Please add a numeric value, because '$num' is not a valid number"
     }
 }
+
+# Exit message outside the loop
+Write-Host "Exiting the script"  
